@@ -7,12 +7,12 @@
   <meta name="x-apple-disable-message-reformatting">
   <style>
     body { margin:0; padding:0; background:#F4F5F7; }
-    img { border:0; outline:none; text-decoration:none; display:block; }
+    img { border:0; outline:none; text-decoration:none; display:block; max-width:100%; height:auto; }
     table { border-collapse:collapse; }
     a { text-decoration:none; }
 
     @media only screen and (max-width:620px){
-      .container { width:100% !important; }
+      .container { width:100% !important; max-width:600px !important; }
       .px { padding-left:20px !important; padding-right:20px !important; }
       .stack { display:block !important; width:100% !important; }
       .btn a { display:block !important; }
@@ -21,14 +21,18 @@
   </style>
 </head>
 <body style="margin:0; padding:0; background:#F4F5F7;">
+  <!-- preheader -->
   <div style="display:none; max-height:0; overflow:hidden; font-size:1px; line-height:1px; color:#F4F5F7;">
     Vagas abertas no Grupo Muffato: processo rápido, online e com benefícios. Inscreva-se!
   </div>
 
+  <!-- wrapper -->
   <table role="presentation" width="100%" bgcolor="#F4F5F7">
     <tr>
       <td align="center" style="padding:24px 12px;">
-        <table role="presentation" width="600" class="container" bgcolor="#FFFFFF" style="width:600px; border-radius:10px; overflow:hidden;">
+        <!-- container -->
+        <table role="presentation" width="100%" class="container" bgcolor="#FFFFFF"
+               style="width:100%; max-width:600px; border-radius:10px; overflow:hidden;">
           <!-- Header -->
           <tr>
             <td class="px" style="padding:20px 32px; background:#2B2B2B;">
@@ -42,10 +46,10 @@
             </td>
           </tr>
 
-          <!-- Hero (opcional: troque por sua própria imagem) -->
+          <!-- Hero -->
           <tr>
             <td style="padding:0;">
-              <img src="img/parcerias.jpeg" width="600" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
+              <img src="img/grupo_muffato.jpeg" width="600" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
             </td>
           </tr>
 
@@ -53,7 +57,7 @@
           <tr>
             <td class="px" style="padding:28px 32px 8px 32px; background:#FFFFFF;">
               <h1 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:28px; line-height:36px; color:#111;">
-                🚀 Faça parte do Grupo Muffato!
+                Faça parte do Grupo Muffato!
               </h1>
             </td>
           </tr>
@@ -65,11 +69,11 @@
             </td>
           </tr>
 
-          <!-- CTA principal (maior) + indicação -->
+          <!-- CTA principal + indicação -->
           <tr>
             <td align="center" style="padding:18px 32px 6px 32px; background:#FFFFFF;">
               <!--[if mso]>
-              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://seu-link-de-inscricao.com"
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://muffato.jobs.recrut.ai/#openings"
                 style="height:58px;v-text-anchor:middle;width:420px;" arcsize="12%" stroke="f" fillcolor="#E21B1B">
                 <w:anchorlock/>
                 <center style="color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;">
@@ -79,7 +83,7 @@
               <![endif]-->
               <!--[if !mso]><!-- -->
               <span class="btn" style="border-radius:10px; background:#E21B1B; display:inline-block;">
-                <a href="https://seu-link-de-inscricao.com"
+                <a href="https://muffato.jobs.recrut.ai/#openings"
                    style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-weight:700; color:#FFFFFF; padding:18px 36px; font-size:20px; line-height:20px;">
                   Quero me candidatar agora
                 </a>
@@ -89,7 +93,7 @@
           </tr>
           <tr>
             <td align="center" style="padding:0 32px 24px 32px; background:#FFFFFF;">
-              <a href="https://seu-link-de-indicacao.com"
+              <a href="https://muffato.jobs.recrut.ai/#openings"
                  style="font-family:Arial,Helvetica,sans-serif; font-size:15px; color:#555; text-decoration:underline;">
                 Preferiu indicar alguém? <strong>Clique aqui para indicar</strong>
               </a>
@@ -99,7 +103,7 @@
           <!-- Divider -->
           <tr><td style="height:1px; background:#EFEFF1;"></td></tr>
 
-          <!-- Benefícios título -->
+          <!-- Benefícios -->
           <tr>
             <td class="px" style="padding:24px 32px 8px 32px; background:#FFFFFF;">
               <h2 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px; color:#111;">
@@ -111,22 +115,21 @@
             </td>
           </tr>
 
-          <!-- Grade de benefícios (imagens locais em img/) -->
           <tr>
             <td class="px" style="padding:12px 24px 28px 24px; background:#FFFFFF;">
               <table role="presentation" width="100%">
                 <!-- Linha 1 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/telemedicina.jpeg" alt="Telemedicina" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/telemedicina.jpeg" alt="Telemedicina" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Telemedicina</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/telepsicologia.jpeg" alt="Telepsicologia" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/telepsicologia.jpeg" alt="Telepsicologia" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Telepsicologia</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/assistencia_odonto.jpeg" alt="Assistência Odontológica" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/assistencia_odonto.jpeg" alt="Assistência Odontológica" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Assistência Odontológica</strong></div>
                   </td>
                 </tr>
@@ -134,31 +137,33 @@
                 <!-- Linha 2 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/tem_saude.jpeg" alt="Rede assistência — Tem Saúde" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/tem_saude.jpeg" alt="Rede assistência — Tem Saúde" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Rede assistência — Tem Saúde</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/coaching2.jpeg" alt="Coaching Nutricional" style="width:100%; height:auto; border-radius:8px;">
-                    <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Nutricional</strong></div>
+                    <!-- CORRIGIDO: alt fechado corretamente -->
+                    <img src="img/coaching2.jpeg" alt="Coaching Esportivo" style="width:100%; border-radius:8px;">
+                    <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Esportivo</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/coaching.jpeg" alt="Coaching Esportivo" style="width:100%; height:auto; border-radius:8px;">
-                    <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Esportivo</strong></div>
+                    <!-- CORRIGIDO: alt fechado corretamente -->
+                    <img src="img/coaching.jpeg" alt="Coaching Nutricional" style="width:100%; border-radius:8px;">
+                    <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Nutricional</strong></div>
                   </td>
                 </tr>
 
                 <!-- Linha 3 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/amamentacao.jpeg" alt="Salas de Amamentação" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/amamentacao.jpeg" alt="Salas de Amamentação" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Salas de Amamentação</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/aniversariante.jpeg" alt="Colaborador Aniversariante" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/aniversariante.jpeg" alt="Colaborador Aniversariante" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Colaborador Aniversariante</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/seguro_de_vida.jpeg" alt="Seguro de Vida" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/seguro_de_vida.jpeg" alt="Seguro de Vida" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Seguro de Vida</strong></div>
                   </td>
                 </tr>
@@ -166,15 +171,16 @@
                 <!-- Linha 4 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/funeral.jpeg" alt="Assistência Funeral" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/funeral.jpeg" alt="Assistência Funeral" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Assistência Funeral</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/vale_transporte.jpeg" alt="Vale Transporte" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/vale_transporte.jpeg" alt="Vale Transporte" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Vale Transporte</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/2%25.jpeg" alt="Descontos 2% em lojas do grupo" style="width:100%; height:auto; border-radius:8px;">
+                    <!-- se possível, renomeie 2%.jpeg para descontos.jpeg; aqui usei encoding %25 -->
+                    <img src="img/desconto.jpeg" alt="Descontos 2% em lojas do grupo" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Descontos 2% em lojas do grupo</strong></div>
                   </td>
                 </tr>
@@ -182,15 +188,15 @@
                 <!-- Linha 5 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/clube.jpeg" alt="Clube de Vantagens" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/clube.jpeg" alt="Clube de Vantagens" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Clube de Vantagens</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/parcerias.jpeg" alt="Parcerias (SESC PR)" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/parcerias.jpeg" alt="Parcerias (SESC PR)" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Parcerias (SESC PR)</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/consignado.jpeg" alt="Consignado" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/consignado.jpeg" alt="Consignado" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Consignado</strong></div>
                   </td>
                 </tr>
@@ -198,11 +204,11 @@
                 <!-- Linha 6 -->
                 <tr>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/uniffato.jpeg" alt="Universidade Corporativa UNIFFATO" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/uniffato.jpeg" alt="Universidade Corporativa UNIFFATO" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Universidade Corporativa UNIFFATO</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <img src="img/gestante.jpeg" alt="Acompanhamento Gestante" style="width:100%; height:auto; border-radius:8px;">
+                    <img src="img/gestante.jpeg" alt="Acompanhamento Gestante" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Acompanhamento Gestante</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
@@ -217,7 +223,7 @@
           <tr>
             <td align="center" style="padding:0 32px 32px 32px; background:#FFFFFF;">
               <span style="display:inline-block; border:2px solid #E21B1B; border-radius:10px;">
-                <a href="https://seu-link-de-lista-de-vagas.com"
+                <a href="https://muffato.jobs.recrut.ai/#openings"
                    style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-weight:700; color:#E21B1B; padding:16px 28px; font-size:18px; line-height:18px;">
                   Ver todas as vagas
                 </a>
@@ -235,6 +241,7 @@
             </td>
           </tr>
         </table>
+        <!-- /container -->
       </td>
     </tr>
   </table>
