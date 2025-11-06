@@ -11,12 +11,21 @@
     table { border-collapse:collapse; }
     a { text-decoration:none; }
 
+    /* Responsivo padrão */
     @media only screen and (max-width:620px){
-      .container { width:100% !important; max-width:600px !important; }
+      .container { width:100% !important; max-width:100% !important; }
       .px { padding-left:20px !important; padding-right:20px !important; }
       .stack { display:block !important; width:100% !important; }
       .btn a { display:block !important; }
       .benefit { width:100% !important; }
+    }
+
+    /* Ajustes finos para telas pequenas */
+    @media only screen and (max-width:480px){
+      .container { width:100% !important; max-width:100% !important; }
+      .px { padding-left:16px !important; padding-right:16px !important; }
+      h1 { font-size:22px !important; line-height:30px !important; }
+      p  { font-size:15px !important; line-height:22px !important; }
     }
   </style>
 </head>
@@ -29,10 +38,11 @@
   <!-- wrapper -->
   <table role="presentation" width="100%" bgcolor="#F4F5F7">
     <tr>
-      <td align="center" style="padding:24px 12px;">
-        <!-- container -->
-        <table role="presentation" width="100%" class="container" bgcolor="#FFFFFF"
-               style="width:100%; max-width:600px; border-radius:10px; overflow:hidden;">
+      <!-- mais respiro e centralização -->
+      <td align="center" style="padding:32px 0;">
+        <!-- container FLUIDO -->
+        <table role="presentation" class="container" bgcolor="#FFFFFF"
+               style="width:90%; max-width:750px; min-width:320px; border-radius:10px; overflow:hidden;">
           <!-- Header -->
           <tr>
             <td class="px" style="padding:20px 32px; background:#2B2B2B;">
@@ -49,7 +59,7 @@
           <!-- Hero -->
           <tr>
             <td style="padding:0;">
-              <img src="https://media.licdn.com/dms/image/v2/D4D22AQGpMPPClVEf8w/feedshare-shrink_800/feedshare-shrink_800/0/1693232025880?e=2147483647&v=beta&t=OvRk1y-J_WkBjmPLoOgNXVh3YwTVtRjzNMs4oA8RPMk" width="600" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQGpMPPClVEf8w/feedshare-shrink_800/feedshare-shrink_800/0/1693232025880?e=2147483647&v=beta&t=OvRk1y-J_WkBjmPLoOgNXVh3YwTVtRjzNMs4oA8RPMk" width="750" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
             </td>
           </tr>
 
@@ -74,7 +84,7 @@
             <td align="center" style="padding:18px 32px 6px 32px; background:#FFFFFF;">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://muffato.jobs.recrut.ai/#openings"
-                style="height:58px;v-text-anchor:middle;width:420px;" arcsize="12%" stroke="f" fillcolor="#E21B1B">
+                style="height:58px;v-text-anchor:middle;width:460px;" arcsize="12%" stroke="f" fillcolor="#E21B1B">
                 <w:anchorlock/>
                 <center style="color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;">
                   Quero me candidatar agora
@@ -141,12 +151,10 @@
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Rede assistência — Tem Saúde</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <!-- CORRIGIDO: alt fechado corretamente -->
                     <img src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/4be73c20-2fef-11f0-aab2-9fc96a8b4932/page-data/92d0ca80-3110-11f0-95e8-a9784a1292d5_1749668937536.jpeg" alt="Coaching Esportivo" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Esportivo</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <!-- CORRIGIDO: alt fechado corretamente -->
                     <img src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/4be73c20-2fef-11f0-aab2-9fc96a8b4932/page-data/92d0ca80-3110-11f0-95e8-a9784a1292d5_1749668915162.jpeg" alt="Coaching Nutricional" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Coaching Nutricional</strong></div>
                   </td>
@@ -179,7 +187,6 @@
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Vale Transporte</strong></div>
                   </td>
                   <td class="benefit stack" width="33.33%" style="padding:8px;">
-                    <!-- se possível, renomeie 2%.jpeg para descontos.jpeg; aqui usei encoding %25 -->
                     <img src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/4be73c20-2fef-11f0-aab2-9fc96a8b4932/page-data/92d0ca80-3110-11f0-95e8-a9784a1292d5_1749669096644.jpeg" alt="Descontos 2% em lojas do grupo" style="width:100%; border-radius:8px;">
                     <div style="font:14px Arial,Helvetica,sans-serif; color:#111; margin-top:8px;"><strong>Descontos 2% em lojas do grupo</strong></div>
                   </td>
