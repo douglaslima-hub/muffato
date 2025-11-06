@@ -27,6 +27,12 @@
       h1 { font-size:22px !important; line-height:30px !important; }
       p  { font-size:15px !important; line-height:22px !important; }
     }
+
+    /* Desktop grande: deixa mais cheio */
+    @media only screen and (min-width:960px){
+      .container { max-width:820px !important; }
+      .px { padding-left:40px !important; padding-right:40px !important; }
+    }
   </style>
 </head>
 <body style="margin:0; padding:0; background:#F4F5F7;">
@@ -39,17 +45,17 @@
   <table role="presentation" width="100%" bgcolor="#F4F5F7">
     <tr>
       <!-- mais respiro e centralização -->
-      <td align="center" style="padding:32px 0;">
-        <!-- container FLUIDO -->
-        <table role="presentation" class="container" bgcolor="#FFFFFF"
-               style="width:90%; max-width:750px; min-width:320px; border-radius:10px; overflow:hidden;">
+      <td align="center" style="padding:40px 0;">
+        <!-- container FLUIDO E LARGO -->
+        <table role="presentation" class="container" bgcolor="#FFFFFF" width="820"
+               style="width:96%; max-width:820px; min-width:320px; border-radius:10px; overflow:hidden;">
           <!-- Header -->
           <tr>
             <td class="px" style="padding:20px 32px; background:#2B2B2B;">
               <table role="presentation" width="100%">
                 <tr>
                   <td align="left">
-                    <img src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/4be73c20-2fef-11f0-aab2-9fc96a8b4932/92d0ca80-3110-11f0-95e8-a9784a1292d5/logo/92d0ca80-3110-11f0-95e8-a9784a1292d5_1748975990512_54w.png" width="160" height="36" alt="Grupo Muffato" style="height:auto;">
+                    <img src="https://s3-sa-east-1.amazonaws.com/recrutai-dev/4be73c20-2fef-11f0-aab2-9fc96a8b4932/92d0ca80-3110-11f0-95e8-a9784a1292d5/logo/92d0ca80-3110-11f0-95e8-a9784a1292d5_1748975990512_54w.png" width="180" height="40" alt="Grupo Muffato" style="height:auto;">
                   </td>
                 </tr>
               </table>
@@ -59,21 +65,22 @@
           <!-- Hero -->
           <tr>
             <td style="padding:0;">
-              <img src="https://media.licdn.com/dms/image/v2/D4D22AQGpMPPClVEf8w/feedshare-shrink_800/feedshare-shrink_800/0/1693232025880?e=2147483647&v=beta&t=OvRk1y-J_WkBjmPLoOgNXVh3YwTVtRjzNMs4oA8RPMk" width="750" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQGpMPPClVEf8w/feedshare-shrink_800/feedshare-shrink_800/0/1693232025880?e=2147483647&v=beta&t=OvRk1y-J_WkBjmPLoOgNXVh3YwTVtRjzNMs4oA8RPMk"
+                   width="820" alt="Trabalhe no Grupo Muffato" style="width:100%; height:auto;">
             </td>
           </tr>
 
           <!-- Título e descrição -->
           <tr>
             <td class="px" style="padding:28px 32px 8px 32px; background:#FFFFFF;">
-              <h1 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:28px; line-height:36px; color:#111;">
+              <h1 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:30px; line-height:38px; color:#111;">
                 Faça parte do Grupo Muffato!
               </h1>
             </td>
           </tr>
           <tr>
             <td class="px" style="padding:0 32px 8px 32px; background:#FFFFFF;">
-              <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:24px; color:#333;">
+              <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:17px; line-height:25px; color:#333;">
                 Estamos com <strong>diversas oportunidades abertas</strong>. Processo <strong>rápido, online e simples</strong> — em poucos minutos você se inscreve e já participa da seleção.
               </p>
             </td>
@@ -81,10 +88,10 @@
 
           <!-- CTA principal + indicação -->
           <tr>
-            <td align="center" style="padding:18px 32px 6px 32px; background:#FFFFFF;">
+            <td align="center" style="padding:20px 32px 6px 32px; background:#FFFFFF;">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://muffato.jobs.recrut.ai/#openings"
-                style="height:58px;v-text-anchor:middle;width:460px;" arcsize="12%" stroke="f" fillcolor="#E21B1B">
+                style="height:60px;v-text-anchor:middle;width:500px;" arcsize="12%" stroke="f" fillcolor="#E21B1B">
                 <w:anchorlock/>
                 <center style="color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;">
                   Quero me candidatar agora
@@ -94,7 +101,7 @@
               <!--[if !mso]><!-- -->
               <span class="btn" style="border-radius:10px; background:#E21B1B; display:inline-block;">
                 <a href="https://muffato.jobs.recrut.ai/#openings"
-                   style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-weight:700; color:#FFFFFF; padding:18px 36px; font-size:20px; line-height:20px;">
+                   style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-weight:700; color:#FFFFFF; padding:20px 44px; font-size:20px; line-height:20px;">
                   Quero me candidatar agora
                 </a>
               </span>
@@ -104,7 +111,7 @@
           <tr>
             <td align="center" style="padding:0 32px 24px 32px; background:#FFFFFF;">
               <a href="https://muffato.jobs.recrut.ai/#openings"
-                 style="font-family:Arial,Helvetica,sans-serif; font-size:15px; color:#555; text-decoration:underline;">
+                 style="font-family:Arial,Helvetica,sans-serif; font-size:16px; color:#555; text-decoration:underline;">
                 Preferiu indicar alguém? <strong>Clique aqui para indicar</strong>
               </a>
             </td>
@@ -116,10 +123,10 @@
           <!-- Benefícios -->
           <tr>
             <td class="px" style="padding:24px 32px 8px 32px; background:#FFFFFF;">
-              <h2 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:30px; color:#111;">
+              <h2 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:23px; line-height:32px; color:#111;">
                 💼 Benefícios que cuidam de você
               </h2>
-              <p style="margin:8px 0 0; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; color:#444;">
+              <p style="margin:8px 0 0; font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:24px; color:#444;">
                 No Grupo Muffato, valorizamos pessoas. Conheça alguns dos nossos benefícios:
               </p>
             </td>
@@ -243,7 +250,7 @@
             <td class="px" style="padding:18px 32px; background:#2B2B2B;">
               <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:18px; color:#C8C8C8;">
                 Você está recebendo este e-mail porque se cadastrou para receber oportunidades do Grupo Muffato.
-                Caso não queira mais receber, <a href="https://muffato.jobs.recrut.ai/#openings" style="color:#FFFFFF; text-decoration:underline;">clique aqui para se descadastrar</a>.
+                Caso não queira mais receber, <a href="*|UNSUB|*" style="color:#FFFFFF; text-decoration:underline;">clique aqui para se descadastrar</a>.
               </p>
             </td>
           </tr>
